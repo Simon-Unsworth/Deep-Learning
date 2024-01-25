@@ -19,7 +19,8 @@ def main() -> None:
 
     test_loss, test_acc = model.evaluate(x=x_test, y=y_test, verbose=0)
 
-    print(f"Test Accuracy {test_acc * 100}%")
+    print(f"Test Loss: {test_loss*100:.2f}%")
+    print(f"Test Accuracy: {test_acc*100:.2f}%")
 
 
 if __name__ == "__main__":
